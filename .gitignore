@@ -1,7 +1,8 @@
-# Sensitive and raw data
+# Confidential datasets and exports
 data/raw/
 data/processed/
 data/private/
+results/private/
 *.csv
 *.tsv
 *.xlsx
@@ -19,7 +20,6 @@ data/private/
 *.7z
 *.pdf
 *.docx
-# Local secrets/configuration
 .env
 .env.*
 !.env.example
@@ -28,7 +28,6 @@ data/private/
 .Rproj.user/
 secrets/
 credentials/
-# Generated outputs: publish only after disclosure review
 results/tables/*
 !results/tables/.gitkeep
 results/figures/*
