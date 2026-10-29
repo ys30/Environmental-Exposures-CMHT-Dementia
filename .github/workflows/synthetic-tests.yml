@@ -1,0 +1,16 @@
+name: Synthetic R checks
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install dependencies
+        run: Rscript -e 'install.packages(c("MASS", "sandwich", "lmtest"), repos="https://cloud.r-project.org")'
+      - name: Run synthetic tests
+        run: Rscript tests/test_synthetic.R
