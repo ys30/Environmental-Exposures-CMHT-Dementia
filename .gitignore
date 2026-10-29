@@ -1,0 +1,36 @@
+# Sensitive and raw data
+data/raw/
+data/processed/
+data/private/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.rds
+*.RData
+*.rda
+*.parquet
+*.feather
+*.sav
+*.dta
+*.db
+*.sqlite
+*.zip
+*.7z
+*.pdf
+*.docx
+# Local secrets/configuration
+.env
+.env.*
+!.env.example
+.Renviron
+.Rhistory
+.Rproj.user/
+secrets/
+credentials/
+# Generated outputs: publish only after disclosure review
+results/tables/*
+!results/tables/.gitkeep
+results/figures/*
+!results/figures/.gitkeep
+!data/synthetic/.gitkeep
