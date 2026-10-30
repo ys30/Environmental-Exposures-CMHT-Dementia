@@ -24,7 +24,7 @@ An applied research project investigating how **air pollution, residential green
 
 ![Year 1 pollution adjusted IRRs with 95% confidence intervals](assets/key_findings.svg)
 
-*Forest plot: Year 1 Q4 versus Q1 pollutant comparisons, transcribed from the supplied H1 regression output. Source-reported uncertainty requires final reconciliation.*
+*Forest plot: Year 1 Q4 versus Q1 pollutant comparisons, transcribed from the available H1 aggregate regression output. Confidence intervals are reported as supplied; unresolved consistency questions are documented separately.*
 
 
 The following are **adjusted IRRs transcribed from supplied regression CSVs** (not independently rerun on restricted records). Results differ across adjustment specifications.
@@ -40,7 +40,7 @@ The following are **adjusted IRRs transcribed from supplied regression CSVs** (n
 | IMD per point (H4 output; PM₂.₅ model) | **1.0096** | **1.0068** | **1.0068** |
 | NDVI (H4 fuller adjustment; PM₂.₅ model) | **0.995** | **0.921** | **0.996** |
 
-The H4 file contains adjusted main effects, **not** pollution × deprivation interaction coefficients. Some interaction-table confidence intervals and p-values disagree; no robust overall effect modification is claimed. NDVI values in the dissertation draft differ from the supplied H3 output and require reconciliation. Detailed confidence intervals, source-specific interactions, and verification notes are in the results page. The [aggregate-results quality audit](docs/results_quality_audit.md) explains cross-model NDVI changes and CI/p-value flags. Remaining unavailable results are marked **暂不公开**.
+The fuller H4 adjustment substantially attenuates the NDVI association; the available interaction outputs do not support a consistent overall effect-modification claim. See [detailed findings](docs/manuscript_results.md) and the [aggregate-results quality audit](docs/results_quality_audit.md) for model-specific estimates, source-table limitations and unresolved discrepancies.
 
 **Outcome:** CMHT service utilisation among people already diagnosed with dementia, not dementia incidence.
 
@@ -69,7 +69,7 @@ The analysis considered four nested adjustment specifications, moving from entry
 
 ## Code and reproducibility
 
-This repository is a **public-facing companion to an existing empirical manuscript**. It contains R modelling utilities, secure-execution instructions and synthetic-data tests. **The newer generalized code has not been independently validated against the restricted clinical extract**, and synthetic tests do not reproduce the published-in-manuscript estimates.
+This repository documents a **completed empirical analysis** through available manuscript results and a public-facing R workflow. The original patient-level CRIS extract is **encrypted and not accessible for a new analysis run**. Consequently, the public code is presented as an analytical reference and synthetic-data demonstration, **not as an independently verified reproduction** of the study estimates. Re-running the restricted models is not a requirement for understanding or evaluating the documented research.
 
 | Location | Contents |
 |---|---|
@@ -84,7 +84,7 @@ This repository is a **public-facing companion to an existing empirical manuscri
 
 ## Data availability and privacy
 
-**Individual-level SLaM CRIS data are confidential and are not publicly available.** Researchers seeking access must contact the relevant **SLaM/CRIS data governance or research access authorities** and obtain applicable institutional approvals. This repository does not distribute patient records, linkage identifiers, restricted extracts or model objects containing sensitive information.
+**Individual-level SLaM CRIS data are confidential, encrypted and unavailable to this repository's maintainers for reanalysis.** Researchers seeking independent access must contact the relevant **SLaM/CRIS data governance or research access authorities** and obtain applicable institutional approvals; access is not guaranteed. This repository does not distribute patient records, linkage identifiers, restricted extracts or model objects containing sensitive information.
 
 Only disclosure-cleared aggregate findings are suitable for public presentation. The manuscript summary is shared separately from the confidential underlying dataset.
 
