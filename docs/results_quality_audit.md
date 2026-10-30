@@ -34,7 +34,11 @@ The first two rows are interaction **term-level** comparisons; they do not repla
 
 **Open issue:** These may represent different inclusion, time-window or variable-completeness rules. Do not claim they are a single consistent N until the cohort flow and model-specific N are confirmed.
 
-## 4. Required secure-environment checks
+## 4. Verification scope given unavailable encrypted source data
+
+The original patient-level dataset is encrypted and cannot currently be accessed for model reruns. The items below are **conditional verification opportunities only if an authorised source environment or original model outputs become available**, not outstanding tasks required to complete this public portfolio. The documented aggregate findings remain usable with their source and uncertainty limitations clearly stated.
+
+## 5. Conditional checks if access is restored
 
 1. Compare the exact H3 and H4 model formulas, covariate reference levels, outcome windows and complete-case row IDs.
 2. Check whether NDVI is measured on the same scale, with the same pollution adjustment, across H3, H4 and the draft manuscript.
