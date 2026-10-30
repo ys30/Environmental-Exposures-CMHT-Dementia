@@ -40,7 +40,7 @@ The following are **adjusted IRRs transcribed from supplied regression CSVs** (n
 | IMD per point (H4 output; PM₂.₅ model) | **1.0096** | **1.0068** | **1.0068** |
 | NDVI (H4 fuller adjustment; PM₂.₅ model) | **0.995** | **0.921** | **0.996** |
 
-The H4 file contains adjusted main effects, **not** pollution × deprivation interaction coefficients. Some interaction-table confidence intervals and p-values disagree; no robust overall effect modification is claimed. NDVI values in the dissertation draft differ from the supplied H3 output and require reconciliation. Detailed confidence intervals, source-specific interactions, and verification notes are in the results page. Remaining unavailable results are marked **暂不公开**.
+The H4 file contains adjusted main effects, **not** pollution × deprivation interaction coefficients. Some interaction-table confidence intervals and p-values disagree; no robust overall effect modification is claimed. NDVI values in the dissertation draft differ from the supplied H3 output and require reconciliation. Detailed confidence intervals, source-specific interactions, and verification notes are in the results page. The [aggregate-results quality audit](docs/results_quality_audit.md) explains cross-model NDVI changes and CI/p-value flags. Remaining unavailable results are marked **暂不公开**.
 
 **Outcome:** CMHT service utilisation among people already diagnosed with dementia, not dementia incidence.
 
@@ -76,6 +76,7 @@ This repository is a **public-facing companion to an existing empirical manuscri
 | [`R/`](R/) | Cohort checks, negative-binomial model engine, interactions, diagnostics and secure pipeline |
 | [`docs/manuscript_results.md`](docs/manuscript_results.md) | Detailed findings and verification limits |
 | [`docs/analysis_plan.md`](docs/analysis_plan.md) | Research design and model specifications |
+| [`docs/results_quality_audit.md`](docs/results_quality_audit.md) | Cross-model interpretation and statistical consistency checks |
 | [`docs/data_dictionary.md`](docs/data_dictionary.md) | Working variable definitions |
 | [`docs/secure_execution.md`](docs/secure_execution.md) | Restricted-data execution and disclosure guidance |
 | [`tests/`](tests/) | Synthetic-data tests; no clinical records |
