@@ -58,7 +58,9 @@ The fuller H4 adjustment substantially attenuates the NDVI association; the avai
 
 **Outcome:** number of CMHT service-use events.
 
-**Model family:** negative-binomial generalized linear models with a log link and an observation-time offset:
+**Model selection:** Poisson regression was evaluated first; negative-binomial regression was selected to account for overdispersion in CMHT event counts.
+
+**Final model:** negative-binomial generalized linear models with a log link and an observation-time offset:
 
 ```r
 MASS::glm.nb(cmht_events ~ exposure + covariates +
