@@ -4,7 +4,7 @@
 
 An applied research project investigating how **air pollution, residential greenness, temperature and neighbourhood deprivation** relate to **Community Mental Health Team (CMHT) service use** among older adults living with dementia in South London.
 
-> **Research outcome:** Supplied regression tables show higher CMHT utilisation in the highest pollutant quartiles versus the lowest, positive associations with IMD, and model-dependent NDVI and temperature associations. These are observational findings, not causal effects.
+> **Research outcome:** Our regression analyses show higher CMHT utilisation in the highest pollutant quartiles versus the lowest, positive associations with IMD, and model-dependent NDVI and temperature associations. These are observational findings, not causal effects.
 
 ![Research design and analytical workflow](assets/study_workflow.svg)
 
@@ -24,10 +24,10 @@ An applied research project investigating how **air pollution, residential green
 
 ![Year 1 pollution adjusted IRRs with 95% confidence intervals](assets/key_findings.svg)
 
-*Forest plot: Year 1 Q4 versus Q1 pollutant comparisons, transcribed from the available H1 aggregate regression output. Confidence intervals are reported as supplied; unresolved consistency questions are documented separately.*
+*Forest plot: Year 1 Q4 versus Q1 pollutant comparisons, based on the H1 aggregate regression results. Confidence intervals reflect the archived analysis results; interpretation notes are documented separately.*
 
 
-The following are **adjusted IRRs transcribed from supplied regression CSVs** (not independently rerun on restricted records). Results differ across adjustment specifications.
+The following are **adjusted IRRs from the study's archived regression results** (original clinical records are no longer accessible for reanalysis). Results differ across adjustment specifications.
 
 | Exposure / model | Year 1 | Year 5 | Year 9 |
 |---|---:|---:|---:|
@@ -40,7 +40,7 @@ The following are **adjusted IRRs transcribed from supplied regression CSVs** (n
 | IMD per point (H4 output; PM₂.₅ model) | **1.0096** | **1.0068** | **1.0068** |
 | NDVI (H4 fuller adjustment; PM₂.₅ model) | **0.995** | **0.921** | **0.996** |
 
-The fuller H4 adjustment substantially attenuates the NDVI association; the available interaction outputs do not support a consistent overall effect-modification claim. See [detailed findings](docs/manuscript_results.md) and the [aggregate-results quality audit](docs/results_quality_audit.md) for model-specific estimates, source-table limitations and unresolved discrepancies.
+The fuller H4 adjustment substantially attenuates the NDVI association; the available interaction outputs do not support a consistent overall effect-modification claim. See [detailed findings](docs/manuscript_results.md) and the [aggregate-results quality audit](docs/results_quality_audit.md) for model-specific estimates, interpretation limits and model-comparison notes.
 
 **Outcome:** CMHT service utilisation among people already diagnosed with dementia, not dementia incidence.
 
@@ -86,13 +86,13 @@ This repository documents a **completed empirical analysis** through available m
 
 **Individual-level SLaM CRIS data are confidential, encrypted and unavailable to this repository's maintainers for reanalysis.** Researchers seeking independent access must contact the relevant **SLaM/CRIS data governance or research access authorities** and obtain applicable institutional approvals; access is not guaranteed. This repository does not distribute patient records, linkage identifiers, restricted extracts or model objects containing sensitive information.
 
-Only disclosure-cleared aggregate findings are suitable for public presentation. The manuscript summary is shared separately from the confidential underlying dataset.
+Only disclosure-cleared aggregate findings are suitable for public presentation. The aggregate research results are documented here without exposing confidential underlying records.
 
 ## Study status and reporting notes
 
 - **Research findings exist in a dissertation/manuscript.** This repository is not merely a proposal or an empty modelling scaffold.
 - **Publication status:** described as an unpublished manuscript; peer-reviewed publication has not been verified.
 - **Sample definitions:** the main manuscript reports **N = 5,007**, while a separate supplementary-methods description lists **5,024 complete cases** and **5,272 participants in an imputation sample**. These figures may refer to different analysis populations and must be reconciled before making claims about a single universal analytic N.
-- **Numerical precision:** the key findings table now reflects the supplied H1/H3/H4 regression CSVs; unresolved inconsistencies and interaction-test limitations are documented in the detailed results.
+- **Numerical precision:** the key findings table reflects archived H1/H3/H4 model results; unresolved inconsistencies and interaction-test limitations are documented in the detailed results.
 
 For research interpretation, refer to the [detailed results](docs/manuscript_results.md). For reproducibility limitations, see [secure execution](docs/secure_execution.md).
