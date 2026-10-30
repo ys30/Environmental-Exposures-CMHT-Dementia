@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="400" viewBox="0 0 1120 400" role="img" aria-label="Approximate manuscript-reported incidence rate ratios for NDVI and deprivation by follow-up year">
+<rect width="1120" height="400" fill="#f8fafc"/><text x="35" y="43" font-family="Arial" font-size="23" font-weight="bold" fill="#0f172a">Key findings | adjusted incidence rate ratios (IRRs)</text>
+<text x="35" y="69" font-family="Arial" font-size="14" fill="#475569">Approximate manuscript-reported estimates; not independently reproduced in this repository</text>
+<g font-family="Arial" font-size="16"><text x="35" y="110" font-weight="bold" fill="#166534">Residential greenness (NDVI)</text><text x="35" y="131" font-size="13" fill="#475569">Per 1.0 NDVI unit; PM₂.₅-adjusted models</text>
+<text x="565" y="110" font-weight="bold" fill="#1e40af">Deprivation (IMD)</text><text x="565" y="131" font-size="13" fill="#475569">Per 1-point increase in IMD</text></g>
+<g stroke="#cbd5e1" stroke-width="1"><line x1="205" y1="159" x2="205" y2="319"/><line x1="700" y1="159" x2="700" y2="319"/></g>
+<g font-family="Arial" font-size="15" fill="#334155"><text x="35" y="181">Year 1</text><text x="35" y="236">Year 5</text><text x="35" y="291">Year 9</text><text x="565" y="181">Year 1</text><text x="565" y="236">Year 5</text><text x="565" y="291">Year 9</text></g>
+<g fill="#16a34a"><rect x="205" y="163" width="152" height="25" rx="5"/><rect x="205" y="218" width="128" height="25" rx="5"/><rect x="205" y="273" width="132" height="25" rx="5"/></g>
+<g fill="#2563eb"><rect x="700" y="163" width="220" height="25" rx="5"/><rect x="700" y="218" width="154" height="25" rx="5"/><rect x="700" y="273" width="154" height="25" rx="5"/></g>
+<g font-family="Arial" font-size="16" font-weight="bold" fill="#0f172a"><text x="368" y="182">~0.38</text><text x="344" y="237">~0.32</text><text x="348" y="292">~0.33</text><text x="930" y="182">~1.010</text><text x="864" y="237">~1.007</text><text x="864" y="292">~1.007</text></g>
+<text x="35" y="357" font-family="Arial" font-size="13" fill="#475569">Bar lengths are illustrative within each panel, not a shared numerical scale. No confidence intervals are plotted because source CIs are unverified.</text>
+<text x="35" y="378" font-family="Arial" font-size="13" fill="#475569">Outcome: CMHT service-use counts (not dementia incidence). Associations do not establish causality.</text>
+</svg>
