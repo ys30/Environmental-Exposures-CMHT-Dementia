@@ -1,53 +1,41 @@
 # Environmental Exposures and CMHT Service Use in Dementia
 
-Manuscript-informed research repository and reproducible analysis workflow for a retrospective cohort study of environmental exposures, socioeconomic deprivation, and Community Mental Health Team (CMHT) service utilization among older adults living with dementia.
+Research documentation and reproducible analysis workflow for a retrospective cohort study of environmental exposures, deprivation, and Community Mental Health Team (CMHT) service utilisation among older adults living with dementia.
 
 ## Study overview
 - Setting: South London and Maudsley NHS Foundation Trust (SLaM), CRIS-derived cohort.
-- Population: adults aged 65+ with a recorded dementia diagnosis; reported analytic cohort **N = 5,007** (subject to verification against approved source data).
-- Outcome: **CMHT service-use event counts**, assessed at Year 1, Year 5 and Year 9, with an offset for active observation days.
-- Exposures: air pollution (PM2.5, PM10, NO2, NOx), greenness (NDVI), temperature, and Index of Multiple Deprivation (IMD).
-- Primary approach: negative-binomial count regression and prespecified exposure interactions.
+- Population: adults aged 65+ with dementia; the manuscript-reported analytic cohort is **N = 5,007**. A separate supplementary-methods description gives **N = 5,024 complete cases** and **N = 5,272 in the imputation sample**. These sample definitions must not be treated as interchangeable until reconciled.
+- Outcome: CMHT service-use event counts at Years 1, 5 and 9, with observation-time offsets.
+- Exposures: PM₂.₅, PM₁₀, NO₂, NOₓ, greenness (NDVI), temperature, and Index of Multiple Deprivation (IMD).
+- Statistical approach: negative-binomial regression and exposure interaction analyses.
 
-**This is a public, code-and-documentation-only repository. No CRIS patient-level records, identifiable information, restricted results, or confidential supervisor feedback belong here.**
+## Results
 
-## Manuscript-reported findings
+Greater residential greenness was associated with lower CMHT service utilisation. In PM₂.₅-adjusted specifications, the manuscript-reported adjusted incidence rate ratios (IRRs) for NDVI were approximately **0.38 at Year 1, 0.32 at Year 5 and 0.33 at Year 9**. These values represent a **one-unit NDVI contrast**, not a 0.1-unit increment.
 
-The dissertation/manuscript **already reports empirical analyses** based on an access-controlled cohort. The estimates below are transcribed as **approximate, manuscript-reported results**, not calculated from public data or independently rerun by this GitHub repository. They should be checked against the final approved manuscript tables before formal citation.
+Higher temperature was associated with greater CMHT service use, with an approximate adjusted IRR of **1.02 per 1°C increase** in the reported specification. Year-specific estimates beyond this available value: **Not publicly available**.
 
-| Analysis | Manuscript-reported estimate | Interpretation / caveat |
-|---|---|---|
-| Analytic cohort | **N = 5,007** | Older adults with recorded dementia; not an incident-dementia cohort |
-| NDVI, Year 1 | Adjusted IRR **~0.38** | Continuous NDVI effect in a PM2.5-adjusted model; per **one full NDVI unit** |
-| NDVI, Year 5 | Adjusted IRR **~0.32** | Same exposure scaling; do not equate to a realistic incremental NDVI change |
-| NDVI, Year 9 | Adjusted IRR **~0.33** | Same exposure scaling |
-| Temperature | Adjusted IRR **~1.02 per °C** | Approximate manuscript estimate; window-specific detail requires table check |
-| IMD, Year 1 | Adjusted IRR **~1.010 per IMD point** | Approximate manuscript estimate |
-| IMD, Year 5 / Year 9 | Adjusted IRR **~1.007 per IMD point** | Approximate manuscript estimates |
-| Pollution quartiles | Analyzed for PM2.5, PM10, NO2 and NOx | Exact quartile-specific estimates not transcribed here pending table-level verification |
-| Exposure interactions | Mostly statistically inconclusive | No blanket claim of synergy or confirmed effect modification |
+Higher deprivation was also associated with increased service utilisation. The approximate adjusted IRRs for IMD were **1.010 at Year 1** and **1.007 at Years 5 and 9**, per one-point increase in IMD.
 
-**Outcome:** CMHT service-use event counts with observation-time offsets. These are **associations**, not evidence that exposures cause dementia or changes in service use. Reported results do not by themselves establish publication status.
+Associations with particulate and gaseous air pollutants (PM₂.₅, PM₁₀, NO₂ and NOₓ) were investigated, including pollutant quartiles. Detailed pollutant-specific estimates: **Not publicly available**.
 
-For a detailed record of the existing dissertation findings, their interpretation limits and outstanding table-level checks, see [Manuscript-reported results](docs/manuscript_results.md).
+Effect modification by greenness, temperature, deprivation and borough was considered. The available summaries do not support asserting statistically significant synergistic effects; detailed interaction estimates and tests: **Not publicly available**.
+
+Exact 95% confidence intervals and p-values for the approximate IRRs above: **Not publicly available**.
+
+**Interpretation:** These are observational associations with CMHT service-use counts, not estimates of dementia incidence or causal effects. The numerical IRRs are approximate values previously transcribed from the manuscript; original regression tables have not been independently reconciled. See [Detailed results](docs/manuscript_results.md).
 
 ## Repository layout
 - `R/`: configuration, cohort checks, exposure models and diagnostics.
-- `docs/`: analysis plan, data dictionary and revision checklist.
-- `data/synthetic/`: safe synthetic examples only.
+- `docs/`: analysis plan, data dictionary, results and revision checklist.
+- `data/synthetic/`: synthetic examples only.
 - `results/tables/` and `results/figures/`: public-safe outputs only.
 
 ## Reproducibility status
-**The study has manuscript-reported results.** This repository is the public code/documentation companion, and its newer generalized R pipeline has **not yet been independently validated against the restricted CRIS extract**. The figures above come from the prior manuscript analysis, not from a GitHub rerun. Variable mappings, follow-up offsets, confounder coding, robust variance estimation and model diagnostics still require validation in an approved secure environment. The synthetic-data CI workflow does not process confidential records.
+The study has manuscript-reported results. The generalized R workflow in this repository has **not** been independently validated against the access-controlled CRIS extract. Synthetic-data checks do not reproduce the study estimates.
 
 ## Data access and governance
-The underlying CRIS records are access-controlled and are **not** publicly redistributable. Researchers seeking access must contact the relevant SLaM/CRIS data governance and institutional research access authorities and obtain the necessary approvals; access is not automatic. This public repository can share manuscript-reported, disclosure-approved aggregate findings without sharing individual-level data. Obtain data only through applicable institutional approvals and secure infrastructure. Do not commit source extracts, row-level data, linkage keys, credentials, small-cell disclosures or sensitive intermediate artifacts.
-
-## Getting started
-1. Review `docs/analysis_plan.md` and `docs/data_dictionary.md`.
-2. Configure local secure paths outside this repository.
-3. Verify data availability and definitions with authorized data custodians.
-4. Implement and validate models; publish only disclosure-reviewed aggregate outputs.
+Individual-level SLaM CRIS records are access-controlled and are not redistributed here. Only aggregate findings cleared for disclosure should be made public. Do not commit patient records, linkage keys, sensitive intermediate files or credentials.
 
 ## Citation
-Dissertation/manuscript findings are summarized above. **Publication status and a formal citation have not been verified**; do not describe this study as peer-reviewed or published without confirmation.
+This work is described as an unpublished manuscript. Publication and peer-review status have not been verified.
