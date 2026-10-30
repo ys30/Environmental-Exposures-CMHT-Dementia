@@ -29,6 +29,8 @@ The dissertation/manuscript **already reports empirical analyses** based on an a
 
 **Outcome:** CMHT service-use event counts with observation-time offsets. These are **associations**, not evidence that exposures cause dementia or changes in service use. Reported results do not by themselves establish publication status.
 
+For a detailed record of the existing dissertation findings, their interpretation limits and outstanding table-level checks, see [Manuscript-reported results](docs/manuscript_results.md).
+
 ## Repository layout
 - `R/`: configuration, cohort checks, exposure models and diagnostics.
 - `docs/`: analysis plan, data dictionary and revision checklist.
