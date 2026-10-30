@@ -77,6 +77,7 @@ This repository documents a **completed empirical analysis** through available m
 | [`docs/manuscript_results.md`](docs/manuscript_results.md) | Detailed findings and verification limits |
 | [`docs/analysis_plan.md`](docs/analysis_plan.md) | Research design and model specifications |
 | [`docs/results_quality_audit.md`](docs/results_quality_audit.md) | Cross-model interpretation and statistical consistency checks |
+| [`docs/research_notes.md`](docs/research_notes.md) | Research interpretation and reporting conventions |
 | [`docs/data_dictionary.md`](docs/data_dictionary.md) | Working variable definitions |
 | [`docs/secure_execution.md`](docs/secure_execution.md) | Restricted-data execution and disclosure guidance |
 | [`tests/`](tests/) | Synthetic-data tests; no clinical records |
