@@ -6,6 +6,8 @@ An applied research project investigating how **air pollution, residential green
 
 > **Research outcome:** The manuscript reports associations between greater greenness and lower CMHT utilisation, and between higher temperature or deprivation and greater utilisation. These are observational associations, not causal effects.
 
+![Research design and analytical workflow](assets/study_workflow.svg)
+
 ## Project at a glance
 
 | | |
@@ -19,6 +21,9 @@ An applied research project investigating how **air pollution, residential green
 | **Technical tools** | R, `MASS::glm.nb`, robust covariance estimation, reproducible analytical workflows |
 
 ## Key findings
+
+![Manuscript-reported NDVI and IMD findings](assets/key_findings.svg)
+
 
 The following are **approximate adjusted incidence rate ratios (IRRs) reported in the dissertation/manuscript**, rather than estimates produced by rerunning the public code.
 
