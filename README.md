@@ -22,7 +22,9 @@ An applied research project investigating how **air pollution, residential green
 
 ## Key findings
 
-![Manuscript-reported NDVI and IMD findings](assets/key_findings.svg)
+![Year 1 pollution adjusted IRRs with 95% confidence intervals](assets/key_findings.svg)
+
+*Forest plot: Year 1 Q4 versus Q1 pollutant comparisons, transcribed from the supplied H1 regression output. Source-reported uncertainty requires final reconciliation.*
 
 
 The following are **adjusted IRRs transcribed from supplied regression CSVs** (not independently rerun on restricted records). Results differ across adjustment specifications.
