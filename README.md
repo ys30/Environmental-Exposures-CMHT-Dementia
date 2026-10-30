@@ -69,7 +69,7 @@ The analysis considered four nested adjustment specifications, moving from entry
 
 ## Code and reproducibility
 
-This repository documents a **completed empirical analysis** through available manuscript results and a public-facing R workflow. The original patient-level CRIS extract is **encrypted and not accessible for a new analysis run**. Consequently, the public code is presented as an analytical reference and synthetic-data demonstration, **not as an independently verified reproduction** of the study estimates. Re-running the restricted models is not a requirement for understanding or evaluating the documented research.
+This repository documents a **completed empirical analysis** through available manuscript results and a public-facing R workflow. The original patient-level CRIS analysis extract is **no longer available for re-runs**. Consequently, the public code is presented as an analytical reference and synthetic-data demonstration, **not as an independently verified reproduction** of the study estimates. Re-running the restricted models is not a requirement for understanding or evaluating the documented research.
 
 | Location | Contents |
 |---|---|
@@ -85,15 +85,14 @@ This repository documents a **completed empirical analysis** through available m
 
 ## Data availability and privacy
 
-**Individual-level SLaM CRIS data are confidential, encrypted and unavailable to this repository's maintainers for reanalysis.** Researchers seeking independent access must contact the relevant **SLaM/CRIS data governance or research access authorities** and obtain applicable institutional approvals; access is not guaranteed. This repository does not distribute patient records, linkage identifiers, restricted extracts or model objects containing sensitive information.
+**Individual-level SLaM CRIS data are confidential and access-controlled; the original analysis extract is no longer available for re-runs.** Researchers seeking independent access must contact the relevant **SLaM/CRIS data governance or research access authorities** and obtain applicable institutional approvals; access is not guaranteed. This repository does not distribute patient records, linkage identifiers, restricted extracts or model objects containing sensitive information.
 
 Only disclosure-cleared aggregate findings are suitable for public presentation. The aggregate research results are documented here without exposing confidential underlying records.
 
 ## Study status and reporting notes
 
-- **Research findings exist in a dissertation/manuscript.** This repository is not merely a proposal or an empty modelling scaffold.
-- **Publication status:** described as an unpublished manuscript; peer-reviewed publication has not been verified.
-- **Sample definitions:** the main manuscript reports **N = 5,007**, while a separate supplementary-methods description lists **5,024 complete cases** and **5,272 participants in an imputation sample**. These figures may refer to different analysis populations and must be reconciled before making claims about a single universal analytic N.
+- **Status:** completed analysis; manuscript not yet published.
+- **Analysis samples:** primary analytic cohort **N = 5,007**; separately documented complete-case analysis **N = 5,024**; multiple-imputation sample **N = 5,272**. These counts refer to different reported analysis definitions and should not be interpreted as a single nested cohort flow.
 - **Numerical precision:** the key findings table reflects archived H1/H3/H4 model results; unresolved inconsistencies and interaction-test limitations are documented in the detailed results.
 
 For research interpretation, refer to the [detailed results](docs/manuscript_results.md). For reproducibility limitations, see [secure execution](docs/secure_execution.md).
