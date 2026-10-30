@@ -1,37 +1,51 @@
-# Manuscript-reported findings (not a repository rerun)
+# Results — Environmental exposures and CMHT service utilisation
 
-This page records findings previously described in the dissertation drafting discussion. **The full source manuscript and original regression tables are not currently available for table-by-table reconciliation.** Values marked ~ are approximate. They must not be described as independently reproduced or formally published.
+## Study population
 
-## Cohort and outcome
-- **N = 5,007** older patients with diagnosed dementia in the SLaM CRIS-based retrospective cohort (as reported in the draft).
-- Outcome: CMHT service-use event counts, not dementia incidence or severity.
-- Follow-up analyses: Year 1, Year 5 and Year 9, using observation-time offsets.
+The study examined adults aged 65 years and older with dementia receiving CMHT services in South London. The manuscript-reported analytic cohort comprised **5,007 participants**. A separate supplementary-methods description reported **5,024 complete cases** and **5,272 participants in the multiple-imputation sample**, including **248 participants (4.7%)** with missing covariate information. The differences in sample definitions remain to be reconciled.
 
-## Quantitative results carried forward from the draft
+Detailed baseline characteristics: **Not publicly available**.
 
-| Exposure / hypothesis | Year 1 adjusted IRR | Year 5 adjusted IRR | Year 9 adjusted IRR | Important qualification |
+## Air pollution and CMHT service utilisation
+
+Ambient air pollution exposures included PM₂.₅, PM₁₀, NO₂ and NOₓ, assessed using negative-binomial regression models, including pollutant-quartile specifications. Detailed adjusted IRRs, 95% confidence intervals and p-values for pollutant exposures: **Not publicly available**. The available numerical summaries do not establish a verified pollutant-specific direction or significance.
+
+## Green space and CMHT service utilisation
+
+Greater residential greenness, measured by NDVI, was associated with lower CMHT service utilisation. The approximate adjusted IRRs were **0.38 at Year 1, 0.32 at Year 5 and 0.33 at Year 9** in the reported PM₂.₅-adjusted specification. These estimates correspond to **one full NDVI unit** and should not be interpreted as effects per 0.1 NDVI. Exact confidence intervals and p-values: **Not publicly available**.
+
+## Temperature and CMHT service utilisation
+
+Higher temperature was associated with increased CMHT service utilisation, with an approximate adjusted IRR of **1.02 per 1°C increase** in the available model summary. Additional time-specific estimates, confidence intervals and p-values: **Not publicly available**.
+
+## Socioeconomic deprivation and CMHT service utilisation
+
+Greater area-level deprivation was associated with higher CMHT service utilisation. Approximate adjusted IRRs for IMD were **1.010 at Year 1** and **1.007 at both Years 5 and 9**, per one-point increase in the index. Exact confidence intervals and p-values: **Not publicly available**.
+
+## Effect modification
+
+Interactions involving air pollution, greenness, temperature and deprivation were examined, and geographical heterogeneity by borough was considered. Available summaries describe many interactions as statistically inconclusive. Consequently, no confirmed synergistic or buffering effect is claimed here. Detailed interaction coefficients, subgroup IRRs and formal tests: **Not publicly available**.
+
+## Longitudinal results
+
+CMHT event counts were analysed at Years 1, 5 and 9 with offsets for observation time. Available time-specific adjusted estimates for NDVI and IMD are reported above. Other longitudinal exposure estimates: **Not publicly available**.
+
+## Missing-data and sensitivity analyses
+
+The supplementary methods described multiple imputation by chained equations (five imputed datasets; random seed 1234). Complete-case versus imputed-model comparisons and other sensitivity estimates: **Not publicly available**.
+
+## Population attributable fractions
+
+Population attributable fractions for PM₂.₅ and NO₂ were considered using counterfactual concentrations of **5 µg/m³** and **10 µg/m³**, respectively. Numerical PAF estimates: **Not publicly available**.
+
+## Results summary
+
+| Exposure | Year 1 adjusted IRR | Year 5 adjusted IRR | Year 9 adjusted IRR | Unit / interpretation |
 |---|---:|---:|---:|---|
-| Greenness / NDVI (H2) | ~0.38 | ~0.32 | ~0.33 | Per **1.0 NDVI unit** in the reported PM2.5-adjusted specification; not per 0.1 NDVI |
-| Temperature (H3) | ~1.02 | Not separately verified | Not separately verified | Approximate effect per 1°C; year-specific source table needed |
-| Deprivation / IMD (H4) | ~1.010 | ~1.007 | ~1.007 | Per 1 IMD index point |
-| Pollution quartiles (H1) | Table-level values pending | Table-level values pending | Table-level values pending | PM2.5, PM10, NO2, NOx were assessed using Q1–Q4 |
-| Pollution × NDVI / temperature / IMD | Not fully transcribed | Not fully transcribed | Not fully transcribed | Many reported interactions were not statistically conclusive |
+| NDVI | ~0.38 | ~0.32 | ~0.33 | Per 1.0 NDVI unit; PM₂.₅-adjusted model |
+| Temperature | ~1.02 | Not publicly available | Not publicly available | Per 1°C; specific window requires confirmation |
+| IMD | ~1.010 | ~1.007 | ~1.007 | Per one IMD point |
+| PM₂.₅, PM₁₀, NO₂, NOₓ | Not publicly available | Not publicly available | Not publicly available | Pollutant-specific estimates |
+| Exposure interactions | Not publicly available | Not publicly available | Not publicly available | Formal interaction tests |
 
-**No 95% confidence intervals or p-values have been transcribed here** because the final underlying tables were not available for direct checking. The earlier manuscript draft reportedly contained at least one malformed interaction CI; interaction claims should be audited rather than copied without review.
-
-## Interpretation safeguards
-1. These are **associations with service utilization**, not causal effects and not dementia-incidence estimates.
-2. NDVI IRR values refer to a full-unit difference on the NDVI scale; a 0.1-unit contrast would require rescaling the coefficient and CI, not reusing the full-unit IRR.
-3. Model-specific sample sizes, confounder adjustment, observation windows and statistical uncertainty must be confirmed against the final thesis tables.
-4. The newer generalized R code is a reproducibility companion under development, not the source of these historical estimates.
-
-## Restricted data access
-Individual-level NHS SLaM CRIS records are confidential and cannot be downloaded from this public repository. Access may be requested through the relevant SLaM/CRIS research governance and data access processes, subject to approvals and secure-environment conditions. Only disclosure-cleared aggregate results may be made public.
-
-## Pending source reconciliation
-- [ ] Verify manuscript version, authorship, thesis/publication status and citation.
-- [ ] Enter exact H1 pollutant-quartile IRRs, 95% CIs, p-values and sample sizes.
-- [ ] Confirm year-specific H3 temperature estimates.
-- [ ] Verify NDVI/IMD models, scales, CI, and adjustment specifications.
-- [ ] Correct malformed interaction CIs and check tests against narrative claims.
-- [ ] Confirm aggregate-results disclosure approval.
+The displayed approximate IRRs were previously transcribed from manuscript summaries; they have not been independently recalculated or reconciled against original regression tables. The outcome is CMHT utilisation, **not dementia incidence**. No unverified significance claims are made.
