@@ -56,6 +56,8 @@ These are **individual term-level tests**, not omnibus interaction tests; multip
 
 The draft describes missing-data and follow-up sensitivity analyses. Independently reconciled complete-case versus imputed estimates, detailed baseline tables, PAF estimates and remaining subgroup estimates: **暂不公开**. The draft's mechanisms (neuroinflammation, restoration, heat stress) are proposed explanations, not effects measured in these CSVs.
 
+For a concise, reproducible checklist of the aggregate-level discrepancies and the limits of this audit, see [Results quality audit](results_quality_audit.md).
+
 ## Verification priorities
 
 1. Reconcile sample sizes and differences between manuscript NDVI estimates and `H3_results.csv`.
